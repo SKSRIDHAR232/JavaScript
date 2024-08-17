@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <nav>
+            <div class="logo">
+                <img src="realme-logo.webp" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                        <a href="">Acessories</a>
+                        <a href="">phone</a>
+                        <a href="">cart</a>
+                        <a href="">logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="information">
+            <div class="overlay"></div>
+            <img class="mobile" src="photo-.png" alt="">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="charging.png" alt="">
+                    <h1>Charger</h1><br>
+                    <p>67W Fast Charger 5000mAh</p>
+                </div>
+                <div class="feature two">
+                    <img src="photo-camera.png" alt="">
+                    <h1>Camera</h1><br>
+                    <p>12MP Wide Angle Lens</p>
+                </div>
+                <div class="feature three">
+                    <img src="processor.png" alt="">
+                    <h1>Processor</h1><br>
+                    <p>SnapDragon ,Mediatech,Octa core</p>
+                </div>
+                <div class="feature four">
+                    <img src="smartphone.png" alt="">
+                    <h1>Display</h1>
+                    <p>15inch display</p>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="control">
+        <img src="down-arrow.png" alt="" id="upbtn">
+        <h3>features</h3>
+        <img src="down-arrow.png" alt="" id="downbtn">
+
+    </div>
+<script>
+    var circle = document.getElementById("circle");
+    var upbtn = document.getElementById("upbtn");
+    var downbtn = document.getElementById("downbtn");
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upbtn.onclick = function(){
+        rotateSum = rotateValue + 'rotate(-90deg)';
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+
+    downbtn.onclick = function(){
+        rotateSum = rotateValue + 'rotate(90deg)';
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+</script>
+
+
+
+</body> 
+</html>

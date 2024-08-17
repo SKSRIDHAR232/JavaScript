@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.calculator{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 15px;
+    border-radius: 30px;    
+    box-shadow: inset -5px -5px 12px #ecf0f3
+                      5px 5px 12px rgba(0,0,0 , 0.16);
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+
+}
+input{
+    grid-column: span 4;
+    height: 50px;
+    border: none;
+    outline:none;
+    border-radius: 15px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px  12px white,
+                inset 3px 3px 10px rgba(0, 0, 0, 0.598);
+    color: rgb(48, 48, 48);
+    font-size: 30px;
+    text-align: right;
+    width: 180px;
+    margin: auto;
+    margin-top: 10px ;
+    margin-bottom: 15px;
+    padding: 8px;
+        
+}
+button{
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px  12px white,
+                inset 3px 3px 10px rgba(55, 55, 55, 0.783);
+    border: none;
+    border-radius: 20px;
+}
+.op{
+    
+    color: green;
+    box-shadow: inset -5px -5px  12px whitesmoke,
+                inset 3px 3px 10px black;
+                font-size: larger;
+}
+.op1{
+    width: 95px;
+    background-color: white;
+    box-shadow: inset -5px -5px  12px white,
+    inset 3px 3px 10px black;
+    font-size: 25px;
+}
+.op1:hover{
+    background-color: rgba(0, 128, 0, 0.676);
+    box-shadow: inset -5px -5px  12px black,
+    inset 3px 3px 10px lightgreen;
+    color: aliceblue;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.del:hover{
+    background-color: rgb(249, 9, 9);
+    box-shadow: none;
+}
+.clr:hover{
+   
+        background-color: rgb(249, 9, 9);
+        box-shadow: none;
+    }
+.op:hover{
+    background-color: rgba(0, 128, 0, 0.676);
+    box-shadow: inset -5px -5px  12px black,
+    inset 3px 3px 10px lightgreen;
+    color: #ecf0f3;
+    font-size: 30px;
+}
+.num:hover{
+    background-color: rgba(196, 193, 193, 0.922);
+    box-shadow: inset -5px -5px 12px grey,
+                       5px 5px 12px black;
+
+}

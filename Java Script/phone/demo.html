@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+.overlay{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+.popupbox{
+    position: absolute;
+    width: 40%;
+    background-color: white;
+    z-index: 2;
+    padding: 20px;
+    left: 30%;
+    border-radius: 10px;
+    display: none;
+}
+</style>
+
+
+
+
+<button onclick="show()">show</button>
+<div class="overlay"></div>
+<div class="popupbox">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores recusandae accusantium, hic, repellat ex eius expedita perferendis quas libero dolore blanditiis vero! Voluptatem quidem non numquam, nihil tenetur placeat.</p>
+    <button onclick="closepopup()">close</button>
+</div>
+
+<script>
+    
+        var popupoverlay = document.querySelector(".overlay")
+        var popupbox = document.querySelector(".popupbox")
+function show(){
+    popupbox.style.display="block"
+    popupoverlay.style.display="block"
+    }
+    function closepopup(){
+        popupbox.style.display="none"
+        popupoverlay.style.display="none"
+    }
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=button, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">show</button>
+    <script>
+        var button = document.getElementById("btn")
+
+        button.addEventListener("click",function(){
+            window.prompt("say hello!!")
+        })
+        button.addEventListener("mouseover",function(){
+            alert("Good Job")
+        })
+        
+    </script>
+</body>
+</html>
